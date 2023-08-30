@@ -1,0 +1,25 @@
+.result__data
+	.result__info
+		.result__title Результаты поиска по запросу «nikon»
+		.result__sub-title Найдено #[span 2032] результата, удовлетворяющих вашему запросу.
+	.result__body
+		each item, index in resultNews
+			article.article.article-horizontal
+				a(href="/").news__item.item-news
+					if item.img
+						.item-news__image
+							img(src=`images/result/${item.img}.jpg`, alt=item.title)
+					.item-news__body 
+						h2.item-news__title= item.title
+						time(datetime=item.date.split('.').reverse().join('-')).item-news__date= item.date
+						.item-news__badges
+							.item-news__badge= item.badge
+						p.item-news__description=item.descr
+						footer.item-news__footer
+							.item-news__badges
+								.item-news__badge= item.badge
+							time(datetime=item.date.split('.').reverse().join('-')).item-news__date= item.date
+							.item-news__info.info-values
+								.item-news__views.info-views= item.eye
+								.item-news__likes.info-likes= item.likes
+	include ../components/pagination

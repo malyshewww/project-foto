@@ -1,0 +1,35 @@
+header.header#header
+	div.container
+		.header__body 
+			.header__logo.logo
+				a.logo__icon(href="/")
+					picture
+						source(srcset="images/logo_pc.svg" media="(min-width: 767.98px)")
+						source(srcset="images/logo_mobile.svg" media="(min-width: 320px)")
+						img(src="images/logo_pc.svg", alt="логотип")
+				.logo__text Портал для&nbsp;фотографов
+			.header__menu.menu-header
+				nav.menu.main-menu
+					ul.menu__list
+						each item, index in menu
+							li.menu__item(class={menu__item_signin: item.title == "Вход"})
+								a.menu__link(href=item.link)
+									.menu__icon
+										img(src=`images/icons/${item.img}.svg`, alt=item.title)
+									.menu__text= item.title
+				nav.menu.menu-mobile
+					ul.menu__list
+						li.menu__item
+							a.menu__link(href="/")
+								.menu__icon
+									img(src=`images/icons/club.svg`, alt="Клуб")
+								.menu__text Клуб
+						li.menu__item
+							a.menu__link(href="/")
+								.menu__icon
+									img(src=`images/icons/signin.svg`, alt="Вход")
+								.menu__text Вход
+				button.menu-header__icon(type="button")
+					span
+					span
+					span

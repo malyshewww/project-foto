@@ -1,0 +1,22 @@
+extends includes/layout.pug
+
+append variables
+	- let pageTitle = "Главная";
+	- description += pageTitle;
+block content
+	main.main
+		include components/search
+		.content 
+			.container
+				a(href="#").banner 
+					.banner__image 
+						img(src="images/main_banner.jpg", alt="баннер")
+					.banner__text 1120х220
+				.categories 
+					ul.categories__list
+						each item, index in badges
+							li.categories__item(class={active: index == 0})
+								a(href="/").categories__link= item.title
+				.main__wrapper 
+					include blocks/main_content
+					include blocks/main_aside

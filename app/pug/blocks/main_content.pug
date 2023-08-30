@@ -1,0 +1,73 @@
+.content 
+	.news 
+		.news__body
+			each item, index in mainNews
+				if index == 0
+					article.article.article-horizontal
+						a(href="/").news__item.item-news
+							.item-news__image
+								img(src=`images/news/${item.img}.jpg`, alt=item.title)
+							.item-news__body 
+								h2.item-news__title= item.title
+								time(datetime=item.date.split('.').reverse().join('-')).item-news__date= item.date
+								.item-news__badges
+									.item-news__badge= item.badge
+								p.item-news__description=item.descr
+								footer.item-news__footer
+									.item-news__badges
+										.item-news__badge= item.badge
+									time(datetime=item.date.split('.').reverse().join('-')).item-news__date= item.date
+									.item-news__info.info-values
+										.item-news__views.info-views= item.eye
+										.item-news__likes.info-likes= item.likes
+				else
+					article.article
+						a(href="/").news__item.item-news
+							.item-news__image
+								img(src=`images/news/${item.img}.jpg`, alt=item.title)
+							.item-news__body 
+								h2.item-news__title= item.title
+								footer.item-news__footer
+									time(datetime=item.date.split('.').reverse().join('-')).item-news__date= item.date
+									.item-news__info.info-values
+										.item-news__views.info-views= item.eye
+										.item-news__likes.info-likes= item.likes
+	.slider
+		.slider__wrapper 
+			.slider__body
+				- let count = 0;
+					while count < 5
+						.slider__item 
+							.slider__image 
+								img(src="images/slider/1.jpg", alt="Изображение слайда")
+							.slider__info.info-values
+								.info-views 452
+								.info-likes 56
+						- count += 1;
+			.slider__controls
+				button(type="button").slider-arrow.slider-arrow-prev
+				button(type="button").slider-arrow.slider-arrow-next
+	.gallery 
+		.gallery__body
+			each item, index in gallery
+				.gallery__item
+					a(href=`images/gallery/${index+1}.png` data-fslightbox="gallery")
+						.gallery__image
+							img(src=`images/gallery/${index+1}.png`, alt="Изображение")
+					.gallery__info.info-values
+						.info-views= item.views
+						.info-likes= item.likes
+	.products 
+		.products__wrapper 
+			.products__body
+				each item, index in products
+					.products__item.item-product
+						.item-product__badge
+							span= item.badge
+						a(href="/").item-product__image
+							img(src="images/products/1.png", alt=item.title)
+						a(href="/").item-product__title= item.title
+						.item-product__price= item.price 
+							|&nbsp; ₽
+			.products__pagination.slider-pagination
+		include ../components/pagination

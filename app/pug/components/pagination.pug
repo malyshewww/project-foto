@@ -1,0 +1,10 @@
+- var numbers = ["1", "2", "3", "4", "5", "6", "7"];
+.pagination 
+	ul.pagination__list 
+		li.pagination__item.disabled
+			a(href="/").pagination__link.pagination-arrow-prev
+		each item, index in numbers
+			li.pagination__item(class={active:index == 3})
+				a.pagination__link(href="/")= item
+		li.pagination__item
+			a(href="/").pagination__link.pagination-arrow-next

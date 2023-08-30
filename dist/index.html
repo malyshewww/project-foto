@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная | site name</title>
+	<meta name="description" content="Описание на странице - Главная">
+	<meta name="keywords" content="Ключевые слова">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://example.com">
+	<meta property="og:title" content="Главная">
+	<meta property="og:description" content="Описание на странице - Главная">
+	<meta property="og:image" content="./images/favicons/favicon-16x16.png">
+	<meta property="twitter:title" content="Главная">
+	<meta property="twitter:description" content="description">
+	<link rel="canonical" href="https://example.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&amp;family=Roboto&amp;family=Rubik:wght@300;400;500&amp;display=swap&_v=20230830161217" rel="stylesheet">
+	<link href="styles/main.min.css?_v=20230830161217" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="images/favicons/android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="apple-mobile-web-app-title" content="Название">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+</head>
+
+<body>
+	<div class="wrapper" id="wrapper">
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__body">
+					<div class="header__logo logo">
+						<a class="logo__icon" href="/">
+							<picture>
+								<source srcset="images/logo_pc.svg" media="(min-width: 767.98px)">
+								<source srcset="images/logo_mobile.svg" media="(min-width: 320px)">
+								<img src="images/logo_pc.svg" alt="логотип">
+							</picture>
+						</a>
+						<div class="logo__text">Портал для&nbsp;фотографов</div>
+					</div>
+					<div class="header__menu menu-header">
+						<nav class="menu main-menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a class="menu__link" href="/">
+										<div class="menu__icon">
+											<img src="images/icons/photo.svg" alt="Фотогора">
+										</div>
+										<div class="menu__text">Фотогора</div>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">
+										<div class="menu__icon">
+											<img src="images/icons/club.svg" alt="Клуб">
+										</div>
+										<div class="menu__text">Клуб</div>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">
+										<div class="menu__icon">
+											<img src="images/icons/forum.svg" alt="Форум">
+										</div>
+										<div class="menu__text">Форум</div>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">
+										<div class="menu__icon">
+											<img src="images/icons/blog.svg" alt="Блог">
+										</div>
+										<div class="menu__text">Блог</div>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">
+										<div class="menu__icon">
+											<img src="images/icons/market.svg" alt="Магазин">
+										</div>
+										<div class="menu__text">Магазин</div>
+									</a>
+								</li>
+								<li class="menu__item menu__item_signin">
+									<a class="menu__link" href="/">
+										<div class="menu__icon">
+											<img src="images/icons/signin.svg" alt="Вход">
+										</div>
+										<div class="menu__text">Вход</div>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<nav class="menu menu-mobile">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a class="menu__link" href="/">
+										<div class="menu__icon">
+											<img src="images/icons/club.svg" alt="Клуб">
+										</div>
+										<div class="menu__text">Клуб</div>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">
+										<div class="menu__icon">
+											<img src="images/icons/signin.svg" alt="Вход">
+										</div>
+										<div class="menu__text">Вход</div>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="menu-header__icon" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="search">
+				<div class="container">
+					<form class="search-form" action="result.html">
+						<div class="search-form__inner">
+							<div class="search-form__field">
+								<input class="search-form__input" type="text" placeholder="Поиск FOTO.RU" autocomplete="off">
+							</div>
+							<button class="search-form__button" type="button">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="content">
+				<div class="container">
+					<a class="banner" href="#">
+						<div class="banner__image">
+							<picture>
+								<source srcset="images/main_banner.webp" type="image/webp">
+								<img src="images/main_banner.jpg" alt="баннер">
+							</picture>
+						</div>
+						<div class="banner__text">1120х220</div>
+					</a>
+					<div class="categories">
+						<ul class="categories__list">
+							<li class="categories__item active">
+								<a class="categories__link" href="/">Свежие темы</a>
+							</li>
+							<li class="categories__item">
+								<a class="categories__link" href="/">Лучшие фото</a>
+							</li>
+							<li class="categories__item">
+								<a class="categories__link" href="/">Блоги</a>
+							</li>
+							<li class="categories__item">
+								<a class="categories__link" href="/">Новости магазина</a>
+							</li>
+						</ul>
+					</div>
+					<div class="main__wrapper">
+						<div class="content">
+							<div class="news">
+								<div class="news__body">
+									<article class="article article-horizontal">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__image">
+												<picture>
+													<source srcset="images/news/1.webp" type="image/webp">
+													<img src="images/news/1.jpg" alt="Готовится к выпуску адаптер Megadap ETZ21 Pro для установки оптики Sony на камеры Nikon Z">
+												</picture>
+											</div>
+											<div class="item-news__body">
+												<h2 class="item-news__title">Готовится к выпуску адаптер Megadap ETZ21 Pro для установки оптики Sony на камеры Nikon Z</h2>
+												<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+												<div class="item-news__badges">
+													<div class="item-news__badge">Клуб</div>
+												</div>
+												<p class="item-news__description">Это будет уже третье поколение адаптеров Megadap для использования оптики для Sony E-mount на камерах Nikon. Использование предыдущей модели (Megadap ETZ21, в настоящее время продается за $249)...</p>
+												<footer class="item-news__footer">
+													<div class="item-news__badges">
+														<div class="item-news__badge">Клуб</div>
+													</div>
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__image">
+												<picture>
+													<source srcset="images/news/2.webp" type="image/webp">
+													<img src="images/news/2.jpg" alt="Sirui выпустит свои первые автофокусные объективы для Sony E, Fujifilm X и Nikon Z">
+												</picture>
+											</div>
+											<div class="item-news__body">
+												<h2 class="item-news__title">Sirui выпустит свои первые автофокусные объективы для Sony E, Fujifilm X и Nikon Z</h2>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__image">
+												<picture>
+													<source srcset="images/news/3.webp" type="image/webp">
+													<img src="images/news/3.jpg" alt="Аккумуляторы для камер от SmallRig">
+												</picture>
+											</div>
+											<div class="item-news__body">
+												<h2 class="item-news__title">Аккумуляторы для камер от SmallRig</h2>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__image">
+												<picture>
+													<source srcset="images/news/4.webp" type="image/webp">
+													<img src="images/news/4.jpg" alt="Светодиодная лампа iFootage Anglerfish SL1 130DNA">
+												</picture>
+											</div>
+											<div class="item-news__body">
+												<h2 class="item-news__title">Светодиодная лампа iFootage Anglerfish SL1 130DNA</h2>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__image">
+												<picture>
+													<source srcset="images/news/5.webp" type="image/webp">
+													<img src="images/news/5.jpg" alt="Студенты запустили Insta360 X3 на высоту 32 км">
+												</picture>
+											</div>
+											<div class="item-news__body">
+												<h2 class="item-news__title">Студенты запустили Insta360 X3 на высоту 32 км</h2>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+								</div>
+							</div>
+							<div class="slider">
+								<div class="slider__wrapper">
+									<div class="slider__body">
+										<div class="slider__item">
+											<div class="slider__image">
+												<picture>
+													<source srcset="images/slider/1.webp" type="image/webp">
+													<img src="images/slider/1.jpg" alt="Изображение слайда">
+												</picture>
+											</div>
+											<div class="slider__info info-values">
+												<div class="info-views">452</div>
+												<div class="info-likes">56</div>
+											</div>
+										</div>
+										<div class="slider__item">
+											<div class="slider__image">
+												<picture>
+													<source srcset="images/slider/1.webp" type="image/webp">
+													<img src="images/slider/1.jpg" alt="Изображение слайда">
+												</picture>
+											</div>
+											<div class="slider__info info-values">
+												<div class="info-views">452</div>
+												<div class="info-likes">56</div>
+											</div>
+										</div>
+										<div class="slider__item">
+											<div class="slider__image">
+												<picture>
+													<source srcset="images/slider/1.webp" type="image/webp">
+													<img src="images/slider/1.jpg" alt="Изображение слайда">
+												</picture>
+											</div>
+											<div class="slider__info info-values">
+												<div class="info-views">452</div>
+												<div class="info-likes">56</div>
+											</div>
+										</div>
+										<div class="slider__item">
+											<div class="slider__image">
+												<picture>
+													<source srcset="images/slider/1.webp" type="image/webp">
+													<img src="images/slider/1.jpg" alt="Изображение слайда">
+												</picture>
+											</div>
+											<div class="slider__info info-values">
+												<div class="info-views">452</div>
+												<div class="info-likes">56</div>
+											</div>
+										</div>
+										<div class="slider__item">
+											<div class="slider__image">
+												<picture>
+													<source srcset="images/slider/1.webp" type="image/webp">
+													<img src="images/slider/1.jpg" alt="Изображение слайда">
+												</picture>
+											</div>
+											<div class="slider__info info-values">
+												<div class="info-views">452</div>
+												<div class="info-likes">56</div>
+											</div>
+										</div>
+									</div>
+									<div class="slider__controls">
+										<button class="slider-arrow slider-arrow-prev" type="button"></button>
+										<button class="slider-arrow slider-arrow-next" type="button"></button>
+									</div>
+								</div>
+							</div>
+							<div class="gallery">
+								<div class="gallery__body">
+									<div class="gallery__item">
+										<a href="images/gallery/1.png" data-fslightbox="gallery">
+											<div class="gallery__image">
+												<picture>
+													<source srcset="images/gallery/1.webp" type="image/webp">
+													<img src="images/gallery/1.png" alt="Изображение">
+												</picture>
+											</div>
+										</a>
+										<div class="gallery__info info-values">
+											<div class="info-views">452</div>
+											<div class="info-likes">56</div>
+										</div>
+									</div>
+									<div class="gallery__item">
+										<a href="images/gallery/2.png" data-fslightbox="gallery">
+											<div class="gallery__image">
+												<picture>
+													<source srcset="images/gallery/2.webp" type="image/webp">
+													<img src="images/gallery/2.png" alt="Изображение">
+												</picture>
+											</div>
+										</a>
+										<div class="gallery__info info-values">
+											<div class="info-views">452</div>
+											<div class="info-likes">56</div>
+										</div>
+									</div>
+									<div class="gallery__item">
+										<a href="images/gallery/3.png" data-fslightbox="gallery">
+											<div class="gallery__image">
+												<picture>
+													<source srcset="images/gallery/3.webp" type="image/webp">
+													<img src="images/gallery/3.png" alt="Изображение">
+												</picture>
+											</div>
+										</a>
+										<div class="gallery__info info-values">
+											<div class="info-views">452</div>
+											<div class="info-likes">56</div>
+										</div>
+									</div>
+									<div class="gallery__item">
+										<a href="images/gallery/4.png" data-fslightbox="gallery">
+											<div class="gallery__image">
+												<picture>
+													<source srcset="images/gallery/4.webp" type="image/webp">
+													<img src="images/gallery/4.png" alt="Изображение">
+												</picture>
+											</div>
+										</a>
+										<div class="gallery__info info-values">
+											<div class="info-views">452</div>
+											<div class="info-likes">56</div>
+										</div>
+									</div>
+									<div class="gallery__item">
+										<a href="images/gallery/5.png" data-fslightbox="gallery">
+											<div class="gallery__image">
+												<picture>
+													<source srcset="images/gallery/5.webp" type="image/webp">
+													<img src="images/gallery/5.png" alt="Изображение">
+												</picture>
+											</div>
+										</a>
+										<div class="gallery__info info-values">
+											<div class="info-views">452</div>
+											<div class="info-likes">56</div>
+										</div>
+									</div>
+									<div class="gallery__item">
+										<a href="images/gallery/6.png" data-fslightbox="gallery">
+											<div class="gallery__image">
+												<picture>
+													<source srcset="images/gallery/6.webp" type="image/webp">
+													<img src="images/gallery/6.png" alt="Изображение">
+												</picture>
+											</div>
+										</a>
+										<div class="gallery__info info-values">
+											<div class="info-views">452</div>
+											<div class="info-likes">56</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products">
+								<div class="products__wrapper">
+									<div class="products__body">
+										<div class="products__item item-product">
+											<div class="item-product__badge">
+												<span>-10%</span>
+											</div>
+											<a class="item-product__image" href="/">
+												<picture>
+													<source srcset="images/products/1.webp" type="image/webp">
+													<img src="images/products/1.png" alt="Falcon Eyes CB-BS300 перекладина телескопическая 3 м">
+												</picture>
+											</a>
+											<a class="item-product__title" href="/">Falcon Eyes CB-BS300 перекладина телескопическая 3 м</a>
+											<div class="item-product__price">2650&nbsp; ₽</div>
+										</div>
+										<div class="products__item item-product">
+											<div class="item-product__badge">
+												<span>-10%</span>
+											</div>
+											<a class="item-product__image" href="/">
+												<picture>
+													<source srcset="images/products/1.webp" type="image/webp">
+													<img src="images/products/1.png" alt="Falcon Eyes CB-BS300 перекладина телескопическая 3 м">
+												</picture>
+											</a>
+											<a class="item-product__title" href="/">Falcon Eyes CB-BS300 перекладина телескопическая 3 м</a>
+											<div class="item-product__price">2650&nbsp; ₽</div>
+										</div>
+										<div class="products__item item-product">
+											<div class="item-product__badge">
+												<span>-10%</span>
+											</div>
+											<a class="item-product__image" href="/">
+												<picture>
+													<source srcset="images/products/1.webp" type="image/webp">
+													<img src="images/products/1.png" alt="Falcon Eyes CB-BS300 перекладина телескопическая 3 м">
+												</picture>
+											</a>
+											<a class="item-product__title" href="/">Falcon Eyes CB-BS300 перекладина телескопическая 3 м</a>
+											<div class="item-product__price">2650&nbsp; ₽</div>
+										</div>
+										<div class="products__item item-product">
+											<div class="item-product__badge">
+												<span>-10%</span>
+											</div>
+											<a class="item-product__image" href="/">
+												<picture>
+													<source srcset="images/products/1.webp" type="image/webp">
+													<img src="images/products/1.png" alt="Falcon Eyes CB-BS300 перекладина телескопическая 3 м">
+												</picture>
+											</a>
+											<a class="item-product__title" href="/">Falcon Eyes CB-BS300 перекладина телескопическая 3 м</a>
+											<div class="item-product__price">2650&nbsp; ₽</div>
+										</div>
+										<div class="products__item item-product">
+											<div class="item-product__badge">
+												<span>-10%</span>
+											</div>
+											<a class="item-product__image" href="/">
+												<picture>
+													<source srcset="images/products/1.webp" type="image/webp">
+													<img src="images/products/1.png" alt="Falcon Eyes CB-BS300 перекладина телескопическая 3 м">
+												</picture>
+											</a>
+											<a class="item-product__title" href="/">Falcon Eyes CB-BS300 перекладина телескопическая 3 м</a>
+											<div class="item-product__price">2650&nbsp; ₽</div>
+										</div>
+										<div class="products__item item-product">
+											<div class="item-product__badge">
+												<span>-10%</span>
+											</div>
+											<a class="item-product__image" href="/">
+												<picture>
+													<source srcset="images/products/1.webp" type="image/webp">
+													<img src="images/products/1.png" alt="Falcon Eyes CB-BS300 перекладина телескопическая 3 м">
+												</picture>
+											</a>
+											<a class="item-product__title" href="/">Falcon Eyes CB-BS300 перекладина телескопическая 3 м</a>
+											<div class="item-product__price">2650&nbsp; ₽</div>
+										</div>
+									</div>
+									<div class="products__pagination slider-pagination"></div>
+								</div>
+								<div class="pagination">
+									<ul class="pagination__list">
+										<li class="pagination__item disabled">
+											<a class="pagination__link pagination-arrow-prev" href="/"></a>
+										</li>
+										<li class="pagination__item">
+											<a class="pagination__link" href="/">1</a>
+										</li>
+										<li class="pagination__item">
+											<a class="pagination__link" href="/">2</a>
+										</li>
+										<li class="pagination__item">
+											<a class="pagination__link" href="/">3</a>
+										</li>
+										<li class="pagination__item active">
+											<a class="pagination__link" href="/">4</a>
+										</li>
+										<li class="pagination__item">
+											<a class="pagination__link" href="/">5</a>
+										</li>
+										<li class="pagination__item">
+											<a class="pagination__link" href="/">6</a>
+										</li>
+										<li class="pagination__item">
+											<a class="pagination__link" href="/">7</a>
+										</li>
+										<li class="pagination__item">
+											<a class="pagination__link pagination-arrow-next" href="/"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<aside class="aside">
+							<div class="news news-aside">
+								<div class="news-aside__body">
+									<article class="article">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__image">
+												<picture>
+													<source srcset="images/news/6.webp" type="image/webp">
+													<img src="images/news/6.jpg" alt="Sirui выпустит свои первые автофокусные объективы для Sony E, Fujifilm X и Nikon Z">
+												</picture>
+											</div>
+											<div class="item-news__body">
+												<h2 class="item-news__title">Sirui выпустит свои первые автофокусные объективы для Sony E, Fujifilm X и Nikon Z</h2>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__image">
+												<picture>
+													<source srcset="images/news/7.webp" type="image/webp">
+													<img src="images/news/7.jpg" alt="Светодиодная лампа iFootage Anglerfish SL1 130DNA">
+												</picture>
+											</div>
+											<div class="item-news__body">
+												<h2 class="item-news__title">Светодиодная лампа iFootage Anglerfish SL1 130DNA</h2>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__image">
+												<picture>
+													<source srcset="images/news/8.webp" type="image/webp">
+													<img src="images/news/8.jpg" alt="Светодиодная лампа iFootage Anglerfish SL1 130DNA">
+												</picture>
+											</div>
+											<div class="item-news__body">
+												<h2 class="item-news__title">Светодиодная лампа iFootage Anglerfish SL1 130DNA</h2>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__image">
+												<picture>
+													<source srcset="images/news/9.webp" type="image/webp">
+													<img src="images/news/9.jpg" alt="Светодиодная лампа iFootage Anglerfish SL1 130DNA">
+												</picture>
+											</div>
+											<div class="item-news__body">
+												<h2 class="item-news__title">Светодиодная лампа iFootage Anglerfish SL1 130DNA</h2>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__image">
+												<picture>
+													<source srcset="images/news/10.webp" type="image/webp">
+													<img src="images/news/10.jpg" alt="Светодиодная лампа iFootage Anglerfish SL1 130DNA">
+												</picture>
+											</div>
+											<div class="item-news__body">
+												<h2 class="item-news__title">Светодиодная лампа iFootage Anglerfish SL1 130DNA</h2>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+								</div>
+								<div class="news-aside__small-body">
+									<article class="article article-small">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__body">
+												<h2 class="item-news__title">Светодиодная лампа iFootage Anglerfish SL1 130DNA</h2>
+												<p class="item-news__description">Это будет уже третье поколение адаптеров Megadap для использования оптики для Sony E-mount на камерах Nikon. Использование предыдущей модели (Megadap ETZ21, в настоящее время продается за $249)...</p>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+														<div class="item-news__message info-message">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article article-small">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__body">
+												<h2 class="item-news__title">Студенты запустили Insta360 X3 на высоту 32 км</h2>
+												<p class="item-news__description">Это будет уже третье поколение адаптеров Megadap для использования оптики для Sony E-mount на камерах Nikon. Использование предыдущей модели (Megadap ETZ21, в настоящее время продается за $249)...</p>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+														<div class="item-news__message info-message">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article article-small">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__body">
+												<h2 class="item-news__title">Аккумуляторы для камер от SmallRig</h2>
+												<p class="item-news__description">Это будет уже третье поколение адаптеров Megadap для использования оптики для Sony E-mount на камерах Nikon. Использование предыдущей модели (Megadap ETZ21, в настоящее время продается за $249)...</p>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+														<div class="item-news__message info-message">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article article-small">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__body">
+												<h2 class="item-news__title">Студенты запустили Insta360 X3 на высоту 32 км</h2>
+												<p class="item-news__description">Это будет уже третье поколение адаптеров Megadap для использования оптики для Sony E-mount на камерах Nikon. Использование предыдущей модели (Megadap ETZ21, в настоящее время продается за $249)...</p>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+														<div class="item-news__message info-message">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+									<article class="article article-small">
+										<a class="news__item item-news" href="/">
+											<div class="item-news__body">
+												<h2 class="item-news__title">Аккумуляторы для камер от SmallRig</h2>
+												<p class="item-news__description">Это будет уже третье поколение адаптеров Megadap для использования оптики для Sony E-mount на камерах Nikon. Использование предыдущей модели (Megadap ETZ21, в настоящее время продается за $249)...</p>
+												<footer class="item-news__footer">
+													<time class="item-news__date" datetime="2023-08-10">10.08.2023</time>
+													<div class="item-news__info info-values">
+														<div class="item-news__views info-views">452</div>
+														<div class="item-news__likes info-likes">56</div>
+														<div class="item-news__message info-message">56</div>
+													</div>
+												</footer>
+											</div>
+										</a>
+									</article>
+								</div>
+								<div class="pagination-mobile">
+									<div class="pagination">
+										<ul class="pagination__list">
+											<li class="pagination__item disabled">
+												<a class="pagination__link pagination-arrow-prev" href="/"></a>
+											</li>
+											<li class="pagination__item">
+												<a class="pagination__link" href="/">1</a>
+											</li>
+											<li class="pagination__item">
+												<a class="pagination__link" href="/">2</a>
+											</li>
+											<li class="pagination__item">
+												<a class="pagination__link" href="/">3</a>
+											</li>
+											<li class="pagination__item active">
+												<a class="pagination__link" href="/">4</a>
+											</li>
+											<li class="pagination__item">
+												<a class="pagination__link" href="/">5</a>
+											</li>
+											<li class="pagination__item">
+												<a class="pagination__link" href="/">6</a>
+											</li>
+											<li class="pagination__item">
+												<a class="pagination__link" href="/">7</a>
+											</li>
+											<li class="pagination__item">
+												<a class="pagination__link pagination-arrow-next" href="/"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__body">
+					<a class="footer__logo logo-footer" href="/">
+						<picture>
+							<source srcset="images/footer-logo_pc.svg" media="(min-width: 767.98px)">
+							<source srcset="images/footer-logo_mobile.svg" media="(min-width: 320px)">
+							<img src="images/footer-logo_pc.svg" alt="логотип">
+						</picture>
+					</a>
+					<div class="footer__copyright">Все права защищены &copy; 2023</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="scripts/main.min.js?_v=20230830161217" defer></script>
+</body>
+
+</html>

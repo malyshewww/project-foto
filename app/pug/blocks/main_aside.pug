@@ -1,0 +1,31 @@
+aside.aside
+	.news.news-aside
+		.news-aside__body
+			each item, i in asideNews
+				article.article
+					a(href="/").news__item.item-news
+						if item.img
+							.item-news__image
+								img(src=`images/news/${item.img}.jpg`, alt=item.title)
+						.item-news__body 
+							h2.item-news__title= item.title
+							footer.item-news__footer
+								time(datetime=item.date.split('.').reverse().join('-')).item-news__date= item.date
+								.item-news__info.info-values
+									.item-news__views.info-views= item.eye
+									.item-news__likes.info-likes= item.likes
+		.news-aside__small-body
+			each item, i in smallNews
+				article.article.article-small
+					a(href="/").news__item.item-news
+						.item-news__body 
+							h2.item-news__title= item.title
+							p.item-news__description=item.descr
+							footer.item-news__footer
+								time(datetime=item.date.split('.').reverse().join('-')).item-news__date= item.date
+								.item-news__info.info-values
+									.item-news__views.info-views= item.eye
+									.item-news__likes.info-likes= item.likes
+									.item-news__message.info-message= item.msg
+		.pagination-mobile
+			include ../components/pagination

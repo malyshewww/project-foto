@@ -1,0 +1,13 @@
+extends includes/layout.pug
+
+append variables
+	- let pageTitle = "Результаты поиска";
+	- description += pageTitle;
+block content
+	main.main.result
+		include components/search
+		.content 
+			.container
+				.main__wrapper 
+					include blocks/result_content
+					include blocks/result_aside
