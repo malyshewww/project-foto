@@ -242,12 +242,6 @@ body.lock {
   pointer-events: none;
 }
 
-.main-menu .menu__icon {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 53px;
-  flex: 0 0 53px;
-}
-
 .menu.menu-mobile {
   display: none;
 }
@@ -2549,6 +2543,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .main-menu .menu__item {
     width: 100%;
+  }
+
+  .main-menu .menu__icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 53px;
+    flex: 0 0 53px;
   }
 
   .menu.menu-mobile {
