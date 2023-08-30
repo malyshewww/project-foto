@@ -248,10 +248,6 @@ body.lock {
   flex: 0 0 53px;
 }
 
-.main-menu .menu__item {
-  width: 100%;
-}
-
 .menu.menu-mobile {
   display: none;
 }
@@ -2549,6 +2545,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .main-menu.active {
     right: -17px;
+  }
+
+  .main-menu .menu__item {
+    width: 100%;
   }
 
   .menu.menu-mobile {
